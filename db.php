@@ -3,7 +3,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT); // Make MySQLi throw 
 
     try {
         // Try Connect to the DB with new MySqli object - Params {hostname, userid, password, dbname}
-        $link = new mysqli("10.131.0.111", "nais_usr", "PowerMax60.2", "nais");
+        $link = new mysqli("mysql", "nais_usr", "PowerMax60.2", "nais");
     } catch (mysqli_sql_exception $e) { // Failed to connect? Lets see the exception details..
         echo "MySQLi Error Code: " . $e->getCode() . "<br />";
         echo "Exception Msg: " . $e->getMessage();
