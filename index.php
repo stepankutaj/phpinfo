@@ -1,1 +1,3 @@
-funguje
+<php?
+phpinfo();
+?>
